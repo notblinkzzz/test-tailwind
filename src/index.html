@@ -1,16 +1,59 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./assets/css/output.css" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css   ">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Template tailwind test</title>
 </head>
-<body>
-    <div class="m-4 grid gap-4 sm:grid-cols-12">
-        <div class="min-h-[100px] rounded-lg bg-orange-500 shadow sm:col-span-2 sm:block hidden"></div>
-        <div class="min-h-[100px] rounded-lg bg-teal-500 shadow sm:col-span-8"></div>
-        <div class="min-h-[100px] rounded-lg bg-purple-500 shadow sm:col-span-2 sm:block hidden"></div>
-      </div>
+
+<body class="flex flex-col min-h-screen">
+    <header class="p-4 bg-gray-800 text-white">
+        <div class="container mx-auto">
+            <h1 class="text-2xl font-bold">My Website</h1>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <div class="container mx-auto">
+            <h2 class="text-xl font-bold">Welcome to my website</h2>
+            <p class="text-gray-600">This is a simple website built with Tailwind CSS</p>
+            <div class="grid gap-4 sm:grid-cols-2">
+                <div class="bg-gray-200 p-4 rounded-lg shadow">
+                    <h3 class="text-lg font-bold">About Me</h3>
+                    <p class="text-gray-600">I am a web developer based in the UK</p>
+                </div>
+                <div class="bg-gray-200 p-4 rounded-lg shadow">
+                    <h3 class="text-lg font-bold">My Skills</h3>
+                    <p class="text-gray-600">I am skilled in HTML, CSS, JavaScript, PHP and MySQL</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="grid gap-4 sm:grid-cols-12 border-8 p-4 border-orange-500">
+
+        <div class="min-h-[100px] rounded-lg bg-orange-500 shadow sm:col-span-2 sm:block hidden">
+
+        </div>
+
+        <div id="mobile-div" class="min-h-[100px] bg-red-500 shadow sm:col-span-8 gap-4 flex justify-around items-center">
+            <i class="fa-solid fa-house text-white text-3xl"></i>
+            <i class="fa-solid fa-book-open text-gray-300 text-3xl"></i>
+            <i class="fa-solid fa-message text-blue-300 text-3xl"></i>
+            <i class="fa-solid fa-user text-yellow-300 text-3xl"></i>
+        </div>
+        
+
+        <div class="min-h-[100px] rounded-lg bg-purple-500 shadow sm:col-span-2 sm:block hidden">
+
+        </div>
+
+    </footer>
 </body>
 </html>
